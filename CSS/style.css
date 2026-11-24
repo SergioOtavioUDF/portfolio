@@ -1,0 +1,362 @@
+/* ===== Temas (claro / escuro) =====
+   O tema é definido pelo atributo data-bs-theme no <html>.
+   Para mudar uma cor do site, altere só as variáveis abaixo. */
+:root,
+[data-bs-theme="dark"]{
+    --bg: #0b0a10;
+    --surface: #14121c;
+    --border: #2a2638;
+    --text: #ece8f5;
+    --muted: #a59fb8;
+    --accent: #a78bfa;
+    --accent-soft: #c4b5fd;
+    --btn-bg: #a78bfa;
+    --btn-bg-hover: #c4b5fd;
+    --btn-text: #000000;
+    --shadow: 0 8px 24px rgba(0, 0, 0, .35);
+    color-scheme: dark;
+}
+
+[data-bs-theme="light"]{
+    --bg: #f7f5fb;
+    --surface: #ffffff;
+    --border: #ddd6ee;
+    --text: #1e1b2e;
+    --muted: #5f5878;
+    --accent: #6d28d9;
+    --accent-soft: #5b21b6;
+    --btn-bg: #7c3aed;
+    --btn-bg-hover: #6d28d9;
+    --btn-text: #ffffff;
+    --shadow: 0 8px 24px rgba(60, 40, 120, .12);
+    color-scheme: light;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    transition: background-color .25s ease, color .25s ease;
+}
+
+h1, h2, h3, .navbar-brand, .btn, .terminal{
+    font-family: "JetBrains Mono", monospace;
+}
+
+a{
+    color: var(--accent);
+}
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    scroll-margin-top: 20px;
+}
+
+.cinza{
+    color: var(--muted);
+}
+
+header{
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand{
+    color: var(--accent-soft);
+}
+
+.navbar .nav-link{
+    color: var(--muted);
+}
+
+.navbar .nav-link:hover{
+    color: var(--accent);
+}
+
+footer{
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+}
+
+footer p{
+    margin: 0;
+}
+
+.terminal{
+    max-width: 600px;
+    padding: 20px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.terminal p{
+    margin: 0;
+}
+
+.cargo{
+    color: var(--accent-soft);
+    font-size: 20px;
+}
+
+.bio{
+    max-width: 600px;
+    margin: 25px 0;
+    color: var(--muted);
+    font-size: 18px;
+}
+
+.btn-roxo{
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    font-weight: bold;
+}
+
+.btn-roxo:hover{
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-text);
+}
+
+.btn-contorno{
+    border: 1px solid var(--accent);
+    color: var(--text);
+}
+
+.btn-contorno:hover{
+    background-color: var(--surface);
+    border-color: var(--accent);
+    color: var(--text);
+}
+
+.icones{
+    margin-top: 25px;
+}
+
+.icones img{
+    width: 32px;
+    margin-right: 15px;
+}
+
+h2{
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    font-size: 26px;
+}
+
+h3{
+    color: var(--accent);
+    font-size: 17px;
+}
+
+.foto{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.caixa{
+    height: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.tag{
+    display: inline-block;
+    margin: 0 5px 8px 0;
+    padding: 3px 12px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-control{
+    margin-bottom: 15px;
+    background-color: var(--surface);
+    border-color: var(--border);
+    color: var(--text);
+}
+
+.form-control:focus{
+    background-color: var(--surface);
+    border-color: var(--accent);
+    color: var(--text);
+    box-shadow: 0 0 0 .2rem color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+.contato{
+    display: block;
+    width: fit-content;
+    margin-bottom: 15px;
+    padding: 8px 20px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.contato img{
+    width: 22px;
+    margin-right: 10px;
+}
+
+.contato:hover{
+    border-color: var(--accent);
+}
+
+/* ===== Botão de tema ===== */
+.btn-tema{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--accent);
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.btn-tema:hover{
+    border-color: var(--accent);
+    transform: rotate(15deg);
+}
+
+.btn-tema svg{
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+/* mostra o ícone certo para cada tema */
+.icone-sol{ display: none; }
+[data-bs-theme="dark"] .icone-sol{ display: block; }
+[data-bs-theme="dark"] .icone-lua{ display: none; }
+
+/* ===== Hobbies ===== */
+.hobbies{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    scroll-margin-top: 20px;
+}
+
+.hobbies-titulo{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.hobbies .nav{
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.hobbies .nav-link{
+    padding: 6px 16px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.hobbies .nav-link:hover{
+    border-color: var(--accent);
+    color: var(--text);
+}
+
+.hobbies .nav-link.active{
+    background-color: var(--btn-bg);
+    border-color: var(--btn-bg);
+    color: var(--btn-text);
+    font-weight: bold;
+}
+
+.hobby-icone{
+    margin-bottom: 8px;
+    font-size: 32px;
+    line-height: 1;
+}
+
+.hobbies .tab-pane h4{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.hobbies .tab-pane p{
+    color: var(--muted);
+}
+
+.hobbies .tab-pane p:last-child{
+    margin-bottom: 0;
+}
+
+/* League Of Legends Pointer - https://www.cursors-4u.com/cursor/league-of-legends-pointer */
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/league-of-legends-pointer-db2baa3d-32.webp') 32 32, auto !important;
+}
+
+.ouvindo{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.ouvindo-titulo{
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.ouvindo iframe{
+    display: block;
+    border: 0;
+    border-radius: 12px;
+}
+
+.voltar-topo{
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--btn-bg);
+    border-radius: 70%;
+    box-shadow: var(--shadow);
+    color: var(--btn-text);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity .25s ease, transform .25s ease;
+}
+
+.voltar-topo.visivel{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.voltar-topo:hover{
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-text);
+}

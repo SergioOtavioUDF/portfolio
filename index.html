@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sérgio Otavio (Castiel) Portfólio</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <script>try {document.documentElement.setAttribute("data-bs-theme", localStorage.getItem("tema") || "dark");} catch (e) {}
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">Sérgio Portfólio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#idiomas">Idiomas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item ms-md-2">
+                            <button id="botao-tema" class="btn-tema" type="button" aria-label="Alternar entre modo claro e escuro" title="Alternar tema">
+                                <svg class="icone-sol" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM1 11h3v2H1v-2zm19 0h3v2h-3v-2zM4.2 5.6l1.4-1.4 2.1 2.1-1.4 1.4-2.1-2.1zm12.1 12.1 1.4-1.4 2.1 2.1-1.4 1.4-2.1-2.1zM5.6 19.8l-1.4-1.4 2.1-2.1 1.4 1.4-2.1 2.1zM18.4 7.7l-1.4-1.4 2.1-2.1 1.4 1.4-2.1 2.1z"/></svg>
+                                <svg class="icone-lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="container">
+            <div class="terminal">
+                <p class="cinza">Olá, eu sou</p>
+                <h1>Sérgio Otavio <span class="cinza">(Castiel)</span></h1>
+                <p class="cargo"><span id="cargo">Estudante de Sistemas de Informação</span>|</p>
+            </div>
+            <p class="bio">
+                Estudo Sistemas de Informação com foco em cibersegurança, defesa cibernética e hacking ético. Aprendo programação, redes e segurança na prática, para contribuir com um ambiente digital mais seguro.
+            </p>
+            <a class="btn btn-roxo" href="https://github.com/SergioOtavioUDF?tab=repositories" target="_blank">Ver projetos no GitHub</a>
+            <a class="btn btn-contorno" href="#contato">Entrar em contato</a>
+            <div class="icones">
+                <a href="https://github.com/SergioOtavioUDF" target="_blank"><img src="IMG/github.svg" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/castieldlx/" target="_blank"><img src="IMG/linkedin.svg" alt="LinkedIn"></a>
+                <a href="mailto:sergiootavio204@gmail.com"><img src="IMG/email.svg" alt="E-mail"></a>
+            </div>
+        </section>
+        <section id="sobre" class="container">
+            <h2>Sobre mim</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="foto" src="IMG/1.jpg">
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="foto" src="IMG/2.jpg">
+                        </div>
+                        <div class="col-6">
+                            <img class="foto" src="IMG/3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Sou estudante de Sistemas de Informação, com interesse em cibersegurança, defesa cibernética e hacking ético. Estou desenvolvendo minhas habilidades em programação, redes e segurança da informação, buscando aprimorar meus conhecimentos por meio de estudos
+                        e projetos práticos. Meu objetivo é contribuir para um ambiente digital mais seguro, explorando a tecnologia com responsabilidade e ética.
+                    </p>
+                    <p><b>Formação:</b> Sistemas de Informação, UDF (2º semestre de 2026 a 2030)</p>
+                    <p><b>Áreas de interesse:</b> Defesa cibernética, hacking ético e OSINT. Ainda estou definindo meu foco.</p>
+                    <p><b>Certificações:</b> Nenhuma por enquanto.</p>
+                    <div class="hobbies" id="hobbies">
+                        <h3 class="hobbies-titulo">Meus hobbies e interesses</h3>
+                        <ul class="nav" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="aba-musica" data-bs-toggle="pill" data-bs-target="#painel-musica" type="button" role="tab" aria-controls="painel-musica" aria-selected="true"> Música</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="aba-jogos" data-bs-toggle="pill" data-bs-target="#painel-jogos" type="button" role="tab" aria-controls="painel-jogos" aria-selected="false"> Jogos</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="aba-osint" data-bs-toggle="pill" data-bs-target="#painel-osint" type="button" role="tab" aria-controls="painel-osint" aria-selected="false"> OSINT</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="painel-musica" role="tabpanel" aria-labelledby="aba-musica" tabindex="0">
+                                <h4>Música</h4>
+                                <p>
+                                    Tenho um gosto musical bastante eclético, transitando entre diferentes estilos e sonoridades. Minha playlist vai de MPB e rap ao underground, love songs e techno, sem deixar de lado a curiosidade por novos gêneros e artistas. Gosto da diversidade musical e da liberdade de não me prender a um único estilo.
+                                </p>
+                                <span class="tag">MPB</span>
+                                <span class="tag">Rap</span>
+                                <span class="tag">Underground</span>
+                                <span class="tag">Love songs</span>
+                                <span class="tag">Techno</span>
+                                <span class="tag">e mais...</span>
+                            </div>
+                            <div class="tab-pane fade" id="painel-jogos" role="tabpanel" aria-labelledby="aba-jogos" tabindex="0">
+                                <h4>Jogos</h4>
+                                <p>
+                                    League of Legends (LoL) é o jogo que mais joguei e acompanhei. Hoje quase não jogo, mas continuo gostando do cenário e da estratégia por trás de cada partida. Também gosto de experimentar novos títulos que despertem interesse e criatividade.
+                                </p>
+                                <span class="tag">League of Legends</span>
+                                <span class="tag">Cenário competitivo</span>
+                                <span class="tag">Novos títulos</span>
+                            </div>
+                            <div class="tab-pane fade" id="painel-osint" role="tabpanel" aria-labelledby="aba-osint" tabindex="0">
+                                <h4>OSINT</h4>
+                                <p>
+                                    Tenho interesse em OSINT (Open Source Intelligence), com foco na coleta, análise e correlação de informações disponíveis publicamente. Gosto de explorar técnicas de investigação digital, análise de rastros digitais e identificação de informações em fontes abertas, sempre respeitando princípios éticos e limites legais.
+                                </p>
+                                <span class="tag">Coleta</span>
+                                <span class="tag">Análise</span>
+                                <span class="tag">Correlação</span>
+                                <span class="tag">Rastros digitais</span>
+                                <span class="tag">Ética e legalidade</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ouvindo">
+                        <h3 class="ouvindo-titulo">Ouvindo no momento</h3>
+                        <iframe
+                        src="https://open.spotify.com/embed/track/1UsAjRCSavihMYsspqJz4e?si=a3eb0c6783b24b3e"
+                        width="100%" height="152" loading="lazy"
+                        title="Músicas que estou ouvindo"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe
+                        src="https://open.spotify.com/embed/track/7E1duSMvHGUcYRgwrMZOUf"
+                        width="100%" height="152" loading="lazy"
+                        title="Músicas que estou ouvindo"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe
+                        src="https://open.spotify.com/embed/track/173oBdI5W1ucG1MUdAMsor"
+                        width="100%" height="152" loading="lazy"
+                        title="Músicas que estou ouvindo"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="habilidades" class="container">
+            <h2>Habilidades <span class="cinza">(em aprendizado)</span></h2>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="caixa">
+                        <h3>Programação</h3>
+                        <span class="tag">C</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="caixa">
+                        <h3>Web</h3>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="caixa">
+                        <h3>Banco de dados</h3>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="caixa">
+                        <h3>Inteligência</h3>
+                        <span class="tag">OSINT</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="idiomas" class="container">
+            <h2>Idiomas</h2>
+            <span class="tag">Português (Nativo)</span>
+            <span class="tag">Inglês (Básico)</span>
+            <span class="tag">Japonês (Básico)</span>
+        </section>
+        <section id="contato" class="container">
+            <h2>Contato</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="formulario">
+                        <label for="nome">Nome</label>
+                        <input class="form-control" type="text" id="nome">
+                        <label for="email">Seu e-mail</label>
+                        <input class="form-control" type="email" id="email">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="5"></textarea>
+                        <button class="btn btn-roxo" type="submit">Enviar mensagem</button>
+                        <p id="aviso"></p>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <a class="contato" href="https://www.linkedin.com/in/castieldlx/" target="_blank"><img src="IMG/linkedin.svg" alt="">LinkedIn</a>
+                    <a class="contato" href="https://github.com/SergioOtavioUDF" target="_blank"><img src="IMG/github.svg" alt="">GitHub</a>
+                    <a class="contato" href="mailto:sergiootavio204@gmail.com"><img src="IMG/email.svg" alt="">sergiootavio204@gmail.com</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© <span id="ano">2026</span> Sérgio Otavio (Castiel)</p>
+        </div>
+    </footer>
+    <a href="#inicio" id="voltar-topo" class="voltar-topo" aria-label="Voltar ao topo">Up</a>
+    <script src="JAVASCRIPT/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="JAVASCRIPT/script.js" type="text/javascript"></script>
+</body>
+</html>
